@@ -12,13 +12,14 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label" for="location">Locations</label>
-                    <input class="form-control" type="text" name="campground[location]" id="location"
-                    value="<%= campground.location %>" required>
+                    <label class="form-label" for="location">Location</label>
+                    <input class="form-control" type="text" id="location" name="campground[location]"
+                        value="<%=campground.location %>" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                 </div>
+    
                 <div class="mb-3">
                     <label class="form-label" for="price-label">Campground Price</label>
                     <div class="input-group">
@@ -39,9 +40,9 @@
                 </div>
                 <div class="mb-3">
                     <div class="form-file custom-file">
-                        <input type="file" class="form-file-label" id="image" name="image" multiple>
-                        <label for="image" class="form-file-label">
-                            <span class="form-file-text custom-file-lable">Add more image(s)...</span>
+                        <input type="file" class="form-file-input" id="image" name="image" multiple>
+                        <label class="form-file-label" for="image">
+                            <span class="form-file-text custom-file-label">Add more image(s)...</span>
                             <span class="form-file-button">Browse</span>
                         </label>
                     </div>
